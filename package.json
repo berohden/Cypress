@@ -1,0 +1,17 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test": "cypress run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Professional Cypress test suite for Yahoo search functionality - Technical Assignment",
+  "devDependencies": {
+    "cypress": "^14.5.3"
+  }
+}
