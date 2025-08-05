@@ -1,6 +1,6 @@
-# Suíte de Testes de Busca do Yahoo - Cypress 
+# Suíte de Testes Automatizados E2E - Cypress 
 
-Este projeto demonstra a implementação de testes automatizados E2E usando Cypress para validar a funcionalidade de busca do Yahoo.com. 
+Este projeto demonstra a implementação de testes automatizados E2E usando Cypress para validar funcionalidades web diversas. 
 
 ## Estrutura do Projeto
 
@@ -9,9 +9,11 @@ cypress/
 ├── cypress.config.js                            # Configuração principal do Cypress
 ├── package.json                                 # Dependências e scripts do projeto
 ├── e2e/
-│   └── search/
-│       ├── yahoo-search.cy.js                   # Teste principal usando Page Object Model
-│       └── yahoo-search-simple.cy.js            # Abordagem de teste simplificada
+│   ├── search/
+│   │   ├── yahoo-search.cy.js                   # Teste Yahoo com Page Object Model
+│   │   └── yahoo-search-simple.cy.js            # Teste Yahoo abordagem simplificada
+│   └── uol/
+│       └── uol-seguranca-privacidade.cy.js      # Teste validação termos UOL
 ├── support/
 │   ├── commands.js                              # Comandos customizados do Cypress
 │   ├── e2e.js                                   # Configurações de suporte
@@ -22,7 +24,7 @@ cypress/
 └── fixtures/                                    # Dados de teste (vazio atualmente)
 ```
 
-## 🎯 Cenários de Teste Implementados
+## Cenários de Teste Implementados
 
 ### **yahoo-search-simple.cy.js** (Abordagem Direta)
 - **Teste**: "deve realizar busca no Yahoo e exibir resultados"
@@ -30,10 +32,7 @@ cypress/
 - **Foco**: Simplicidade e execução rápida
 
 ### **yahoo-search.cy.js** (Page Object Model)
-- **Teste 1**: "deve buscar com sucesso por 'Pacto Soluções' e exibir resultados"
-- **Teste 2**: "deve lidar com busca com atualização adequada do título da página"
-- **Abordagem**: Usa Page Object Model para melhor manutenibilidade
-- **Verificações**:
+- **Teste**: "deve buscar com sucesso por 'Pacto Soluções' e exibir resultados"
   - Carregamento da página de resultados
   - Presença do termo de busca na URL
   - Existência de resultados de busca

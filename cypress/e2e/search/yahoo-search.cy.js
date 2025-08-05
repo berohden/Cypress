@@ -30,11 +30,4 @@ describe('Funcionalidade de Busca do Yahoo', () => {
      // Verificar se o título da página inclui o termo de busca
     yahooSearchResultsPage.verifyPageTitleContainsSearchTerm(searchTerm);
   });
-
-  it('deve lidar com busca com atualização adequada do título da página', () => {
-    // Realizar a busca
-    yahooHomePage.performSearch(searchTerm);
-    
-   
-  });
 });
