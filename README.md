@@ -22,7 +22,7 @@ cypress/
 └── fixtures/                                    # Dados de teste (vazio atualmente)
 ```
 
-## 🎯 Cenários de Teste Implementados
+## Cenários de Teste Implementados
 
 ### **yahoo-search-simple.cy.js** (Abordagem Direta)
 - **Teste**: "deve realizar busca no Yahoo e exibir resultados"
